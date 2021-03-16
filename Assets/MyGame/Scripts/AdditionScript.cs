@@ -10,9 +10,6 @@ public class AdditionScript : MonoBehaviour
     public Text sum;
     public Text message;
 
-    public Color rot = Color.red;
-    public Color weiss = Color.white;
-
     float if1Float;
     float if2Float;
     
@@ -24,7 +21,6 @@ public class AdditionScript : MonoBehaviour
         try
         {
             if1Float = float.Parse(if1.text);
-            if1.image.color = weiss;
             message.text = "";
             num1 = true;
         }
@@ -32,14 +28,14 @@ public class AdditionScript : MonoBehaviour
         catch (System.Exception)
         {
             message.text = "Geben Sie eine gültige Zahl ein! ";
-            if1.image.color = rot;
+            if1.image.color = Color.red;
             num1 = false;
         }
+
 
         try
         {
             if2Float = float.Parse(if2.text);
-            if2.image.color = weiss;
             message.text = "";
             num2 = true;
         }
@@ -47,16 +43,19 @@ public class AdditionScript : MonoBehaviour
         catch (System.Exception)
         {
             message.text = "Geben Sie eine gültige Zahl ein";
-            if2.image.color = rot;
+            if2.image.color = Color.red;
             num2 = false;
         }
+        
 
-    if(num1 == true && num2 == true){
+    if(num1 == true && num2 == true) {
         sum.text = (if1Float + if2Float).ToString();
         Debug.Log("Das Ergebnis ist " + sum.text);
-      }  
+         }  
+
         else {
         sum.text = "/";
-    
+        }
+   
     }
-}}
+}
