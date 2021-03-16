@@ -27,7 +27,7 @@ public class AdditionScript : MonoBehaviour
         
         catch (System.Exception)
         {
-            message.text = "Geben Sie eine gültige Zahl ein! ";
+            //message.text = "Geben Sie eine gültige Zahl ein! ";
             if1.image.color = Color.red;
             num1 = false;
         }
@@ -42,7 +42,7 @@ public class AdditionScript : MonoBehaviour
         
         catch (System.Exception)
         {
-            message.text = "Geben Sie eine gültige Zahl ein";
+           // message.text = "Geben Sie eine gültige Zahl ein";
             if2.image.color = Color.red;
             num2 = false;
         }
@@ -55,6 +55,7 @@ public class AdditionScript : MonoBehaviour
 
         else {
         sum.text = "/";
+        message.text = "Geben Sie eine gültige Zahl ein";
         }
    
     }
