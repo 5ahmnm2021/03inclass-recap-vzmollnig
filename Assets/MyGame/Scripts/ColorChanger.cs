@@ -7,17 +7,21 @@ public class ColorChanger : MonoBehaviour
 {
     public GameObject color;
 
+
     public void ChangeColor()
     {
         Color[] colors =
         {
-            new Color32(255,205,25,100),
-            new Color32(95,34,0,100),
-            new Color32(207,63,21,100),
-            new Color32(102,47,84,100)
+            new Color32(152,151,152,100),
+            new Color32(0,255,127,100),
+            new Color32(255,127,80,100),
+            new Color32(255,20,147,100),
+            new Color32(255,64,64,100),
+            new Color32(255,165,79,100),
+            new Color32(138,43,226,100),
+            new Color32(173,255,47,100),
         };
 
-        //----------Change Color on Space Click----------
 
         if (Input.GetKeyDown("space"))
         {

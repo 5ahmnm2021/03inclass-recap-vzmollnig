@@ -23,11 +23,11 @@ public class AdditionScript : MonoBehaviour
             if1Float = float.Parse(if1.text);
             message.text = "";
             num1 = true;
+            if1.image.color = Color.white;
         }
         
         catch (System.Exception)
         {
-            //message.text = "Geben Sie eine gültige Zahl ein! ";
             if1.image.color = Color.red;
             num1 = false;
         }
@@ -38,11 +38,11 @@ public class AdditionScript : MonoBehaviour
             if2Float = float.Parse(if2.text);
             message.text = "";
             num2 = true;
+            if2.image.color = Color.white;
         }
         
         catch (System.Exception)
         {
-           // message.text = "Geben Sie eine gültige Zahl ein";
             if2.image.color = Color.red;
             num2 = false;
         }
@@ -55,7 +55,7 @@ public class AdditionScript : MonoBehaviour
 
         else {
         sum.text = "/";
-        message.text = "Geben Sie eine gültige Zahl ein";
+        message.text = "Bitte geben Sie eine gültige Zahl ein!";
         }
    
     }
